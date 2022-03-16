@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUTME</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Indie+Flower&family=Press+Start+2P&family=Shizuru&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            height: 1600px;
+        }
+
+        .left {
+            display: inline-block;
+            color: aliceblue;
+            position: absolute;
+            left: 34px;
+            top: 25px;
+        }
+
+        .left img {
+            width: 110px;
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 20px;
+            color: whitesmoke;
+        }
+
+        .mid {
+            display: inline;
+            /* border: 2px solid red; */
+            color: aliceblue;
+            position: absolute;
+            left: 200px;
+            top: 450px;
+        }
+
+        .mid img {
+            width: 350px;
+            border: 6px solid rgb(164, 157, 157);
+            border-radius: 30px;
+            box-shadow: 10px 10px red;
+        }
+
+        .about {
+            position: absolute;
+            bottom: 700px;
+            left: 560px;
+        }
+
+        .about img {
+            width: 50px;
+            border: 4px solid rgb(164, 157, 157);
+            border-radius: 30px;
+            box-shadow: none;
+        }
+
+        .about div {
+            font-size: 20px;
+            font-weight: bold;
+            position: absolute;
+            right: -1px;
+            top: 70px;
+        }
+
+        .info {
+            /* border: 2px solid red; */
+            font-size: 25px;
+            color: aliceblue;
+            display: inline-block;
+            /* position: absolute;
+                    left: 660px;
+                    bottom: -20px;   
+                    padding: 50px;      */
+        }
+
+        .info p {
+            display: inline-block;
+            text-align: center;
+            position: absolute;
+            bottom: -140px;
+            left: 590px;
+            font-weight: bold;
+            font-family: 'Baloo Bhai 2', cursive;
+
+        }
+
+        .right {
+            display: inline;
+            /* border: 2px solid red; */
+            color: aliceblue;
+            position: absolute;
+            right: 30px;
+            top: 20px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            color: aliceblue;
+            font-size: 30px;
+        }
+
+        .navbar li a {
+            color: aliceblue;
+            text-decoration: none;
+            padding: 32px 22px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: darkgreen;
+            text-decoration: underline;
+
+        }
+
+        .conte {
+            background-color: rgb(226, 45, 12);
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 100px;
+        }
+
+        /* skill name css */
+
+        .skill {
+            /* border: 2px solid wheat; */
+            display: inline-block;
+            color: lightgreen;
+            position: absolute;
+            top: 1055px;
+            left: 700px;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .skill img {
+            width: 70px;
+            margin: 0px 22px;
+        }
+
+        /* skill informatin */
+        .ethi {
+            /* border: 2px solid white; */
+            color: aliceblue;
+            display: inline-block;
+            position: absolute;
+            top: 1235px;
+            left: 230px;
+            font-size: 25px;
+        }
+
+        .rt {
+
+            background-color: white;
+            margin: 1250px 408px;
+            margin-left: 10px;
+            margin-right: 900px;
+            border-radius: 30px;
+            /* top: 1055px; */
+        }
+
+        .box {
+            background-color: lawngreen;
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            position: relative;
+            animation-name: rushi;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes rushi {
+            form {
+                width: 200px;
+            }
+
+            to {
+                width: 500px;
+            }
+        }
+
+        /* pentesting information */
+        .bug1 {
+            /* border: 2px solid white; */
+            color: aliceblue;
+            display: inline-block;
+            position: absolute;
+            top: 1235px;
+            left: 1030px;
+            font-size: 25px;
+        }
+
+        .rt1 {
+
+            background-color: white;
+            position: relative;
+            bottom: 1260px;
+            left: 390px;
+            margin: 447px;
+            border-radius: 30px;
+        }
+
+        .box1 {
+            background-color: lawngreen;
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            position: relative;
+            animation-name: rushi1;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes rushi1 {
+            form {
+                width: 240px;
+            }
+
+            to {
+                width: 500px;
+            }
+        }
+
+        /* ctf information */
+        .ctf1 {
+            /* border: 2px solid white; */
+            color: aliceblue;
+            display: inline-block;
+            position: absolute;
+            top: 1400px;
+            left: 230px;
+            font-size: 25px;
+        }
+
+        .rt2 {
+
+            background-color: white;
+            position: relative;
+            bottom: 1549px;
+            left: -442px;
+            margin: 447px;
+            border-radius: 30px;
+        }
+
+        .box2 {
+            background-color: lawngreen;
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            position: relative;
+            animation-name: rushi2;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes rushi2 {
+            form {
+                width: 290px;
+            }
+
+            to {
+                width: 300px;
+            }
+        }
+
+        .tool1 {
+            /* border: 2px solid white; */
+            color: aliceblue;
+            display: inline-block;
+            position: absolute;
+            top: 1400px;
+            left: 863px;
+            font-size: 22px;
+
+        }
+
+        .rt3 {
+
+            background-color: white;
+            position: relative;
+            bottom: 2006px;
+            left: 390px;
+            margin: 447px;
+            border-radius: 30px;
+        }
+
+        .box3 {
+            background-color: lawngreen;
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            position: relative;
+            animation-name: rushi3;
+            animation-duration: 10s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes rushi3 {
+            form {
+                width: 250px;
+            }
+
+            to {
+                width: 560px;
+            }
+        }
+        .end {
+        color: white;
+        position: absolute;
+        display: block;
+        margin: 140 auto;
+        right: 600px;
+        top: 1650px; 
+    }
+    .account2 {
+        display: inline-block;
+    }
+    .account2 li {
+        display: inline-block;
+        color: azure;
+    }
+
+    .account2 li a {
+        color: aliceblue;
+        text-decoration: none;
+        padding: 32px 22px;
+        font-family: 'Indie Flower', cursive;
+    }
+    .account2 img{
+        width: 20px;
+    }
+    .copy{
+        color: whitesmoke;
+        text-align: center;
+        position: absolute;
+        right: 500px;
+        top: 1700px;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="left">
+                <img src="photo_2022-02-27_12-49-12.jpg" alt="">
+                <div>CyberHunter</div>
+            </div>
+            <div class="mid">
+                <img src="photo_2022-03-01_15-47-30.jpg" alt="">
+                <div class="about">
+                    <img src="https://img.icons8.com/fluency/344/guest-male.png" alt="">
+                    <div>ABOUT</div>
+                </div>
+            </div>
+            <div class="info">
+                <p>Hey World , I am Rushikesh Thakur.I am a cyber-security Enthusiast and a Hacker with an Ethical
+                    Mindset.<br>
+                    And having experience in Web-app Security, Vulnerability Assessment & Penetration Testing.<br>
+                    And experienced with tools like burp suite ,Nmap, Pentest tools, frida ,Drozer and of course with
+                    Kali Linux & some GitHub open source tools lile Amass ,fuff etc many more for finding the
+                    vulnerabilities in the web application.
+                </p>
+            </div>
+
+            <div class="right">
+                <ul class="navbar">
+                    <li><a href="rushi.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="rt">
+        <div class="box">
+        </div>
+    </div>
+    <div class="rt1">
+        <div class="box1">
+        </div>
+    </div>
+    <div class="rt2">
+        <div class="box2">
+        </div>
+    </div>
+    <div class="rt3">
+        <div class="box3">
+        </div> 
+    </div>
+
+    <div class="ethi">Ethical Hacking</div>
+    <div class="bug1">Web Penetration Testing</div>
+    <div class="ctf1">Capture The Flag</div>
+    <div class="tool1">Security Tools - Burp Suite, Nmap, Metasploit, Sqlmap & Others</div>
+    <div class="skill">Skills<br>
+        <img src="https://img.icons8.com/fluency/344/creativity.png" alt="">
+    </div>
+    <div class="end">
+        <ul class="account2">
+            <li><a href="#">
+                    <img src="https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg?t=st=1646456790~exp=1646457390~hmac=522addfd9addb99e36f22fe750ef0dc5b1905f1daffbdc7d869c5e92293b1590&w=740"
+                        alt="">
+                </a></li>
+            <li><a href="#">
+                    <img src="https://raw.githubusercontent.com/peterthehan/peterthehan/7029bb807325ea4ed58ee1fdef16f6f4780c8654/assets/twitter.svg"
+                        alt="">
+                </a></li>
+            <li><a href="#">
+                    <img src="https://raw.githubusercontent.com/peterthehan/peterthehan/7029bb807325ea4ed58ee1fdef16f6f4780c8654/assets/linkedin.svg"
+                        alt="">
+                </a></li>
+            <li><a href="#">
+                    <img src="https://raw.githubusercontent.com/peterthehan/peterthehan/7029bb807325ea4ed58ee1fdef16f6f4780c8654/assets/facebook.svg"
+                        alt="">
+                </a></li>
+            <li><a href="#">
+                    <img src="https://raw.githubusercontent.com/peterthehan/peterthehan/7029bb807325ea4ed58ee1fdef16f6f4780c8654/assets/youtube.svg"
+                        alt="">
+                </a></li> 
+        </ul>
+    </div>
+    <div class="copy"> Copyright © 2022, All rights reserved.
+        Personally Crafted 🎨 Rushikesh Thakur <hr>
+    </div>
+</body>
+
+</html>
