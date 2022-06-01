@@ -218,3 +218,6 @@ footer{
     text-align: center;
 }
 
+.box img:hover{
+    transform: scale(1.2);
+}
